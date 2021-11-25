@@ -6,6 +6,7 @@ Console.WriteLine("\t((((((2.Perfect Number     ))))))");
 Console.WriteLine("\t((((((3.Prime Number       ))))))");
 Console.WriteLine("\t((((((4.Reverse Number     ))))))");
 Console.WriteLine("\t((((((5.Coupon Number      ))))))");
+Console.WriteLine("\t((((((6.Stop Watch         ))))))");
 
 int ch =Convert.ToInt32(Console.ReadLine());
 switch(ch){
@@ -30,6 +31,10 @@ pf.Perfect();
        cn.ReadNumOfCoupons();
 
 
+        break;
+    case 6:
+        StopWatch s=new StopWatch();
+        s.RunProgram();
         break;
 
 }
