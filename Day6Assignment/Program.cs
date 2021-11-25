@@ -1,11 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 using Day6Assignment;
 Console.WriteLine("\t((((((Please select any one))))))");
 Console.WriteLine("\t((((((1.Fibbo Series       ))))))");
 Console.WriteLine("\t((((((2.Perfect Number     ))))))");
 Console.WriteLine("\t((((((3.Prime Number       ))))))");
-Console.WriteLine("\t((((((3.Reverse Number     ))))))");
-Console.WriteLine("\t((((((3.Prime Number       ))))))");
+Console.WriteLine("\t((((((4.Reverse Number     ))))))");
+Console.WriteLine("\t((((((5.Coupon Number      ))))))");
 
 int ch =Convert.ToInt32(Console.ReadLine());
 switch(ch){
@@ -24,6 +24,12 @@ pf.Perfect();
             case 4:
         ReverseNumber r=new ReverseNumber();
         r.Reverse();
+        break;
+    case 5:
+        CouponNum cn=new CouponNum();
+       cn.ReadNumOfCoupons();
+
+
         break;
 
 }
