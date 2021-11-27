@@ -10,6 +10,7 @@ Console.WriteLine("\t((((((6.Stop Watch            ))))))");
 Console.WriteLine("\t((((((7.Vending Machine       ))))))");
 Console.WriteLine("\t((((((8.Grigorian Calender    ))))))");
 Console.WriteLine("\t((((((9.Temprature Conversion ))))))");
+Console.WriteLine("\t((((((10.Monthly installment  ))))))");
 
 int Aloo =Convert.ToInt32(Console.ReadLine());
 switch(Aloo){
@@ -61,6 +62,15 @@ pf.Perfect();
     case 9:
         TemperatureConversion tem=new TemperatureConversion();
         TemperatureConversion.Temperature_Coversion();
+        break;
+    case 10:
+        MonthlyPayment mn=new MonthlyPayment();
+        Console.WriteLine("Enter principal year and rate%");
+        int pr=Convert.ToInt32(Console.ReadLine());
+        int yr=Convert.ToInt32(Console.ReadLine());
+        int rate=Convert.ToInt32(Console.ReadLine());
+
+        mn.MonthlyInstallment(pr,yr,rate);
         break;
 
 }
