@@ -1,15 +1,15 @@
 ﻿
 using Day6Assignment;
-Console.WriteLine("\t((((((Please select any one))))))");
-Console.WriteLine("\t((((((1.Fibbo Series       ))))))");
-Console.WriteLine("\t((((((2.Perfect Number     ))))))");
-Console.WriteLine("\t((((((3.Prime Number       ))))))");
-Console.WriteLine("\t((((((4.Reverse Number     ))))))");
-Console.WriteLine("\t((((((5.Coupon Number      ))))))");
-Console.WriteLine("\t((((((6.Stop Watch         ))))))");
-Console.WriteLine("\t((((((7.Vending Machine    ))))))");
-Console.WriteLine("\t((((((8.Grigorian Calender            ))))))");
-
+Console.WriteLine("\t((((((Please select any one   ))))))");
+Console.WriteLine("\t((((((1.Fibbo Series          ))))))");
+Console.WriteLine("\t((((((2.Perfect Number        ))))))");
+Console.WriteLine("\t((((((3.Prime Number          ))))))");
+Console.WriteLine("\t((((((4.Reverse Number        ))))))");
+Console.WriteLine("\t((((((5.Coupon Number         ))))))");
+Console.WriteLine("\t((((((6.Stop Watch            ))))))");
+Console.WriteLine("\t((((((7.Vending Machine       ))))))");
+Console.WriteLine("\t((((((8.Grigorian Calender    ))))))");
+Console.WriteLine("\t((((((9.Temprature Conversion ))))))");
 
 int Aloo =Convert.ToInt32(Console.ReadLine());
 switch(Aloo){
@@ -57,6 +57,10 @@ pf.Perfect();
 
 
 
+        break;
+    case 9:
+        TemperatureConversion tem=new TemperatureConversion();
+        TemperatureConversion.Temperature_Coversion();
         break;
 
 }
