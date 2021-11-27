@@ -10,7 +10,8 @@ Console.WriteLine("\t((((((6.Stop Watch            ))))))");
 Console.WriteLine("\t((((((7.Vending Machine       ))))))");
 Console.WriteLine("\t((((((8.Grigorian Calender    ))))))");
 Console.WriteLine("\t((((((9.Temprature Conversion ))))))");
-Console.WriteLine("\t((((((10.Monthly installment  ))))))");
+Console.WriteLine("\t((((((10.Monthly installment  ))))))"); 
+Console.WriteLine("\t((((((11.Number conversin     ))))))");
 
 int Aloo =Convert.ToInt32(Console.ReadLine());
 switch(Aloo){
@@ -71,6 +72,10 @@ pf.Perfect();
         int rate=Convert.ToInt32(Console.ReadLine());
 
         mn.MonthlyInstallment(pr,yr,rate);
+        break;
+    case 11:
+        NumberConversion num=new NumberConversion();
+        NumberConversion.toBinary();
         break;
 
 }
