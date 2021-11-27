@@ -1,18 +1,22 @@
 ﻿
 using Day6Assignment;
-Console.WriteLine("\t((((((Please select any one   ))))))");
-Console.WriteLine("\t((((((1.Fibbo Series          ))))))");
-Console.WriteLine("\t((((((2.Perfect Number        ))))))");
-Console.WriteLine("\t((((((3.Prime Number          ))))))");
-Console.WriteLine("\t((((((4.Reverse Number        ))))))");
-Console.WriteLine("\t((((((5.Coupon Number         ))))))");
-Console.WriteLine("\t((((((6.Stop Watch            ))))))");
-Console.WriteLine("\t((((((7.Vending Machine       ))))))");
-Console.WriteLine("\t((((((8.Grigorian Calender    ))))))");
-Console.WriteLine("\t((((((9.Temprature Conversion ))))))");
-Console.WriteLine("\t((((((10.Monthly installment  ))))))"); 
-Console.WriteLine("\t((((((11.Number conversin     ))))))");
-
+Console.WriteLine("\t\t((((((Enter y to run and n to stop)))))))");
+char c = Convert.ToChar(Console.ReadLine());
+while(c != 'n')
+{ 
+Console.WriteLine("\t\t((((((Please select any one   ))))))");
+Console.WriteLine("\t\t((((((1.Fibbo Series          ))))))");
+Console.WriteLine("\t\t((((((2.Perfect Number        ))))))");
+Console.WriteLine("\t\t((((((3.Prime Number          ))))))");
+Console.WriteLine("\t\t((((((4.Reverse Number        ))))))");
+Console.WriteLine("\t\t((((((5.Coupon Number         ))))))");
+Console.WriteLine("\t\t((((((6.Stop Watch            ))))))");
+Console.WriteLine("\t\t((((((7.Vending Machine       ))))))");
+Console.WriteLine("\t\t((((((8.Grigorian Calender    ))))))");
+Console.WriteLine("\t\t((((((9.Temprature Conversion ))))))");
+Console.WriteLine("\t\t((((((10.Monthly installment  ))))))"); 
+Console.WriteLine("\t\t((((((11.Number conversin     ))))))");
+Console.WriteLine("\t\t((((((12.Swapping Nibbles     ))))))");
 int Aloo =Convert.ToInt32(Console.ReadLine());
 switch(Aloo){
     case 1:
@@ -77,5 +81,17 @@ pf.Perfect();
         NumberConversion num=new NumberConversion();
         NumberConversion.toBinary();
         break;
+    case 12:
+        SwapNibblesOfBinary sw=new SwapNibblesOfBinary();
+        int n = sw.swapNibbles(100);
+        
+        Console.WriteLine("New after swapping of nibbles="+n);
+        break;
+        default:
+        Console.WriteLine("Sorry Wrong choice!!");
+        break;
 
+}
+    Console.WriteLine("\tplease enter n to stop your programl or any key run!!");
+c=Convert.ToChar(Console.ReadLine());
 }
