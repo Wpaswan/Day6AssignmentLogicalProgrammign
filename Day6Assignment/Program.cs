@@ -8,7 +8,7 @@ Console.WriteLine("\t((((((4.Reverse Number     ))))))");
 Console.WriteLine("\t((((((5.Coupon Number      ))))))");
 Console.WriteLine("\t((((((6.Stop Watch         ))))))");
 Console.WriteLine("\t((((((7.Vending Machine    ))))))");
-Console.WriteLine("\t((((((8.Bhawani            ))))))");
+Console.WriteLine("\t((((((8.Grigorian Calender            ))))))");
 
 
 int Aloo =Convert.ToInt32(Console.ReadLine());
@@ -46,6 +46,15 @@ pf.Perfect();
         vm.countCurrency(amount);
         break;
     case 8:
+        GrigorianCalender gc=new GrigorianCalender();
+        Console.WriteLine("Enter date:");
+        int d=Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter month:");
+        int m = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter year:");
+        int y = Convert.ToInt32(Console.ReadLine());
+        gc.grig(d, m, y);
+
         
         
         break;

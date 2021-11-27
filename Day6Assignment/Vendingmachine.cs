@@ -14,7 +14,7 @@ namespace Day6Assignment
         {
             int[] notes = new int[]{ 2000, 500, 200, 100,
                      50, 20, 10, 5, 1 };
-            int[] noteCounter=new int[9];
+            int[] noteCounter = new int[9];
 
             // count notes using Greedy approach
             for (int i = 0; i < 9; i++)
@@ -26,7 +26,7 @@ namespace Day6Assignment
                     Console.WriteLine(amount);
                 }
             }
-            
+
             // Print notes
             Console.WriteLine("currency count ->");
             int[] notes1 = new int[]{ 2000, 500, 200, 100,
@@ -37,12 +37,12 @@ namespace Day6Assignment
                 if (noteCounter[i] != 0)
                 {
                     Console.WriteLine(notes[i]+" : "+noteCounter[i]);
-                       
+
                 }
-               
+
             }
-            
-            
+
+
         }
     }
 }
