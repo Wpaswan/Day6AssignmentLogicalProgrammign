@@ -46,17 +46,17 @@ pf.Perfect();
         vm.countCurrency(amount);
         break;
     case 8:
-        GrigorianCalender gc=new GrigorianCalender();
+        GrigorianCalender gc = new GrigorianCalender();
         Console.WriteLine("Enter date:");
-        int d=Convert.ToInt32(Console.ReadLine());
+        int d = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Enter month:");
         int m = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Enter year:");
         int y = Convert.ToInt32(Console.ReadLine());
         gc.grig(d, m, y);
 
-        
-        
+
+
         break;
 
 }
